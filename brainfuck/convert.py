@@ -45,7 +45,7 @@ class String2BF:
         OUT = list()
         for i in String.encode():
             OUT.append(self.__Convert(i))
-        return '.>'.join(OUT+[''])[:-1:]
+        return '.>'.join(OUT)+'.'
 
     def __str__(self):
         return self.__S2BF(self.text)
