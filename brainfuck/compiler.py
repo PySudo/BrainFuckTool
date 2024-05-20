@@ -29,7 +29,8 @@ class CompileBF:
     
     @property
     def __StdOut(self):
-        self.OUT += chr(self.stack[self.pointer])
+        if self.stack[self.pointer] >= 0:
+            self.OUT += chr(self.stack[self.pointer])
 
     def __ExectueJustLoop(self, Loop):
         while self.stack[self.pointer] != 1:
