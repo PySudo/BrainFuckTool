@@ -38,7 +38,7 @@ class String2BF:
     def __Convert(self, ASCII):
         Value = self.__GetValue(ASCII)
         if Value == ASCII:
-            return ''.join(self.__Prime(ASCII))
+            return self.__Prime(ASCII)
         return self.__CreateForLoop(Value, ASCII)
 
     def __S2BF(self, String):
