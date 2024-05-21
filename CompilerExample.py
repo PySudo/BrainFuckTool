@@ -12,7 +12,7 @@ MyCompiler.Pointer = 2               # This will set pointer to index 3 in stak 
 MyCompiler.PointerValue = 20         # This will set 20 as MyCompiler.Stack[MyCompiler.Pointer]
 # You can Execute BrainFuck codes and get output like this :
 MyCompiler.ClearData() # This make stack and pointer empty
-output = MyCompiler.ExectueCode('+->+++++++[<++++++++++++++>-]++++[>+++++<-]>[<<.+>>-]<<.')
+output = MyCompiler.ExectueCode('->+++++++[<++++++++++++++>-]+++++[>+++++<-]>[<<.+>>-]<<.')
 print(MyCompiler.Stack)
 print('pointer :',MyCompiler.Pointer)
 print('pointer value :',MyCompiler.PointerValue)
