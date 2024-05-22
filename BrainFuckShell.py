@@ -17,3 +17,4 @@ while True:
         print('-'*15)
     except KeyboardInterrupt:
         break
+print('\nexit')
