@@ -19,5 +19,5 @@ print('pointer value :',MyCompiler.PointerValue)
 print('output is :',output)
 print('-*'*60)
 # You can get output from stack datas without using "." in BF code :
-MyCompiler.Stack = [ord(i) for i in 't.me/PySudo']
+MyCompiler.Stack = [ord(i) for i in 't.me/Py_Sudo']
 print(MyCompiler.PrintStackAsChar())
