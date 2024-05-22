@@ -6,6 +6,9 @@ while True:
         code = input('---> : ')
         if code == 'stack':
             print(MyCompiler.Stack)
+        elif code == 'clear':
+            MyCompiler.ClearData()
+            print('Done.')
         elif all(i in '[+-].,<>' for i in code):
             output = MyCompiler.ExectueCode(code)
             if output:
