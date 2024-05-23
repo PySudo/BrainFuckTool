@@ -50,7 +50,7 @@ class Debug(CompileBF):
         if Code is None:
             Code = self._code
         tokens = self.__ExtractTokens(Code)
-        print('Number of Tokens :',str(len(tokens))+'\n'+'-'*10)
+        print('Number of Tokens :',str(len(tokens)))
         Loop = False
         LoopCode = str()
         stackStatus = '\nStack status after execute : {}'
