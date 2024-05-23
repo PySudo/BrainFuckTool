@@ -46,7 +46,7 @@ class Debug(CompileBF):
             desc = 'This is end of the last loop\nLoop Code : {}'.format(LoopCode)
         return action, desc
 
-    def ReadAndDebug(self, Code=None):
+    def ReadAndDebug(self, Code):
         if Code is None:
             Code = self._code
         tokens = self.__ExtractTokens(Code)
