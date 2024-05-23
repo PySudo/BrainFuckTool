@@ -1,4 +1,4 @@
-from compiler import CompileBF
+from .compiler import CompileBF
 
 class Debug(CompileBF):
     def __GetStackIndex(self, Stack):
@@ -77,3 +77,5 @@ class Debug(CompileBF):
             else:
                 status = str()
             yield str('{}Token {} is : {}\nNumber of tokens : {}\nAction : {}\nDescription : {}{}'.format(('-'*10)+'\n' if token != ',' else '', index+1, token, info['stop']-info['start']+1, action, desc, status))
+    def __iter__(self):
+        return self.ReadAndDebug(self._code)
