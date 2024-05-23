@@ -1,7 +1,7 @@
 from brainfuck import Debug
 
 # Your BrainFuck Code :
-MyCode = '>>>>><<<<<'
+MyCode = '>++[<+++>-]'
 
 # Create a instance :
 MyDebugger = Debug(StackAutoClear=False) # Also you can get code like "Debug(Mycode, StackAutoClear=False)"
