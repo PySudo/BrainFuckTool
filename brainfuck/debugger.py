@@ -24,7 +24,7 @@ class Debug(CompileBF):
             desc = 'This is incrementing the value from {} to {} at stack index {}'.format(self.PointerValue, self.PointerValue+(info['stop']-info['start']+1), self.Pointer)
         elif token == '-':
             action = 'decrease'
-            desc = 'This is decreasing the value from {} to {} at stack index {}'.format(self.PointerValue, self.PointerValue+(info['stop']-info['start']+1), self.Pointer)
+            desc = 'This is decreasing the value from {} to {} at stack index {}'.format(self.PointerValue, self.PointerValue-(info['stop']-info['start']+1), self.Pointer)
         elif token == '>':
             action = 'right shift'
             desc = 'This is shifting to right from index {} to {} in stack'.format(self.Pointer, self.Pointer+(info['stop']-info['start']+1))
