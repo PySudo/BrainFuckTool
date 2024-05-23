@@ -21,3 +21,9 @@ print('-*'*60)
 # You can get output from stack datas without using "." in BF code :
 MyCompiler.Stack = [ord(i) for i in 't.me/Py_Sudo']
 print(MyCompiler.PrintStackAsChar())
+MyCompiler.ClearData()
+print('-*'*60)
+# You can set code like this :
+MyCompiler.Code = '>++++[<+++++++++++++++++++++++++++++>-]<.>>++[<+++++++++++++++++++++++>-]<.>->++++++++++[<+++++++++++>-]<.>->++++++[<+++++++++++++++++>-]<.>->++++++++[<++++++>-]<.>>++++++++++[<++++++++>-]<.>->++[<+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>-]<.>>+++++[<+++++++++++++++++++>-]<.>->+++++++[<++++++++++++>-]<.>>+++++++++[<+++++++++++++>-]<.>>++++++++++[<++++++++++>-]<.>>+++[<+++++++++++++++++++++++++++++++++++++>-]<.'
+# Then you can execute that like this :
+print('result is :', MyCompiler.ExectueCode())
