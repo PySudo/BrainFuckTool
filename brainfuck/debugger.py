@@ -30,7 +30,7 @@ class Debug(CompileBF):
             desc = 'This is shifting to right from index {} to {} in stack'.format(self.Pointer, self.Pointer+(info['stop']-info['start']+1))
         elif token == '<':
             action = 'left shift'
-            desc = 'This is shifting to left from index {} to {} in stack'.format(self.Pointer, self.Pointer+(info['stop']-info['start']+1))
+            desc = 'This is shifting to left from index {} to {} in stack'.format(self.Pointer, self.Pointer-(info['stop']-info['start']+1))
         elif token == '.':
             action = 'standard output'
             desc = 'This prints stack index {} with value {} as ascii'.format(self.Pointer, self.PointerValue)
