@@ -77,8 +77,3 @@ class Debug(CompileBF):
             else:
                 status = str()
             yield str('{}Token {} is : {}\nNumber of tokens : {}\nAction : {}\nDescription : {}{}'.format(('-'*10)+'\n' if token != ',' else '', index+1, token, info['stop']-info['start']+1, action, desc, status))
-
-x = Debug('->+++++++[<++++++++++++++>-]+++++[>+++++<-]>[<<.+>>-]<<.', StackAutoClear=False)
-# print(x.ExectueCode())
-for i in x.ReadAndDebug():
-    print(i)
