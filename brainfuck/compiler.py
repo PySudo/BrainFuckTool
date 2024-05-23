@@ -15,7 +15,7 @@ class CompileBF:
 
     @Code.setter
     def Code(self, code):
-        if all(i in '.,[+-]<>' for i in code):
+        if all(i in '.,[+-]<>\n' for i in code):
             self._code = code
         else:
             raise ValueError('it\'s not a brainfuck code!')
