@@ -86,7 +86,7 @@ print(MyCompiler.PrintStackAsChar())
 ```
 - clear instance datas :
 ```python
-MyCompiler.ClearData() # This make stack and pointer empty
+MyCompiler.ClearData() # This make stack and pointer and etc empty
 ```
 # Debugger :
 ```python
