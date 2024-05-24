@@ -1,4 +1,4 @@
-from brainfuck import CompileBF
+from brainfucktool import CompileBF
 MyCompiler = CompileBF(StackAutoClear=False)
 print('Enter your BF codes.\nFor get stack just type "stack"\nFor clear stack and pointer type "clear"')
 while True:
