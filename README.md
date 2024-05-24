@@ -9,9 +9,9 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install brainfu
 ```bash
 pip install brainfuck-tool
 ```
-if you install this package using pip , just use `brainfucktool.shell()` function for using shell
 
 ## Usage
+- if you install this package using pip , just use `brainfucktool.shell()` function for using shell
 
 - String to brainfuck code :
 ```python
