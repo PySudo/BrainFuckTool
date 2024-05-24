@@ -63,7 +63,7 @@ print(MyCompiler.PointerValue)   # This show you the "MyCompiler.Pointer" points
 # You can change pointer and stack and etc like this :
 MyCompiler.Stack = [10, 20, 29, 40]  # This will set [10, 20, 29, 40] list as stack
 MyCompiler.Pointer = 2               # This will set pointer to index 3 in stak list
-MyCompiler.PointerValue = 20         # This will set 20 as MyCompiler.Stack[MyCompiler.Pointer]
+MyCompiler.PointerValue = 30         # This will set 30 as MyCompiler.Stack[MyCompiler.Pointer]
 # You can set a code and execute that like this :
 MyCompiler.Code = '>++++[<+++++++++++++++++++++++++++++>-]<.>>++[<+++++++++++++++++++++++>-]<.>->++++++++++[<+++++++++++>-]<.>->++++++[<+++++++++++++++++>-]<.>->++++++++[<++++++>-]<.>>++++++++++[<++++++++>-]<.>->++[<+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++>-]<.>>+++++[<+++++++++++++++++++>-]<.>->+++++++[<++++++++++++>-]<.>>+++++++++[<+++++++++++++>-]<.>>++++++++++[<++++++++++>-]<.>>+++[<+++++++++++++++++++++++++++++++++++++>-]<.'
 # Then you can execute that like this :
