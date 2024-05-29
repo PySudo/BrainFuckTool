@@ -96,7 +96,7 @@ from brainfucktool import Debug
 MyCode = '>++[<+++>-]'
 
 # Create a instance :
-MyDebugger = Debug(StackAutoClear=False) # Also you can get code like "Debug(Mycode, StackAutoClear=False)"
+MyDebugger = Debug(StackAutoClear=False) # Also you can set code like "Debug(Mycode, StackAutoClear=False)"
 
 # Set Brainfuck Code :
 MyDebugger.Code = MyCode
