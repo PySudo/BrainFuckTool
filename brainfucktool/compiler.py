@@ -15,10 +15,7 @@ class CompileBF:
 
     @Code.setter
     def Code(self, code):
-        if all(i in '.,[+-]<>\n' for i in code):
-            self._code = code
-        else:
-            raise ValueError('it\'s not a brainfuck code!')
+        self._code = ''.join(i for i in code if i in '.,[+-]<>')
 
     def __Shift(self, Right=True):
         if ( self.__pointer >= len(self._stack)-1 and Right ) or ( self.__pointer <= 0 and not Right ):
