@@ -58,7 +58,7 @@ class Debug(CompileBF):
         for index, info in enumerate(tokens):
             token = info['token']
             action, desc = self.GetInformation(info, LoopCode)
-            if token in '[':
+            if token == '[':
                 times = self.PointerValue
                 Loop = True
             if token == ']' and Loop:
